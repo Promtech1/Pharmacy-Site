@@ -11,7 +11,7 @@
         
         
         header{
-            width: 75%;
+            width: 80%;
             margin: 0% auto;
             display: flex;
             justify-content: space-between;
@@ -252,7 +252,8 @@
 
                         .surround-left{
                             display: flex;
-                            gap: 4em;
+                            align-items: center;
+                            gap: 2em;
                             flex-basis: content;
 
                             .left-arrow{
@@ -260,6 +261,11 @@
                                 flex-direction: row;
                                 align-items: center;
                                 gap: 1em;
+
+                                img{
+                                    cursor: pointer; 
+                                }
+                               
                                 
                                 .side-line{
                                     width: 1.5px;
@@ -297,6 +303,11 @@
                                 flex-direction: row;
                                 align-items: center;
                                 gap: 1em;
+
+                                img{
+                                    cursor: pointer; 
+                                }
+
                                 .side-line{
                                     width: 1.5px;
                                     height: 70px;

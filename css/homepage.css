@@ -31,7 +31,7 @@ html body {
 }
 
 .container .header header {
-  width: 75%;
+  width: 80%;
   margin: 0% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +329,10 @@ html body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
   -ms-flex-preferred-size: content;
       flex-basis: content;
 }
@@ -346,6 +349,10 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+}
+
+.container .section1 section .section1-wrap .surround-text .up .surround-left .left-arrow img {
+  cursor: pointer;
 }
 
 .container .section1 section .section1-wrap .surround-text .up .surround-left .left-arrow .side-line {
@@ -395,6 +402,10 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1em;
+}
+
+.container .section1 section .section1-wrap .surround-text .up .surround-right .right-arrow img {
+  cursor: pointer;
 }
 
 .container .section1 section .section1-wrap .surround-text .up .surround-right .right-arrow .side-line {

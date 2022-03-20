@@ -32,6 +32,4 @@ hamburger.addEventListener("click", function(){
     }else{
         navbar.classList.add("mini")
     }
-
-   
 })
