@@ -807,6 +807,10 @@ html body {
   font-weight: lighter;
 }
 
+.container .news .news-wrap .read .same5 .text p span {
+  display: none;
+}
+
 .container .news .news-wrap .read .same5 .text p:nth-child(3) {
   color: #F07C00;
   cursor: pointer;

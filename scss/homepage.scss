@@ -605,6 +605,10 @@
                        p{
                            font-size: 1.1rem;
                            font-weight: lighter;
+
+                           span{
+                               display: none;
+                           }
                        }
 
                        p:nth-child(3){
