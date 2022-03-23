@@ -606,8 +606,12 @@
                            font-size: 1.1rem;
                            font-weight: lighter;
 
-                           span{
+                           .read-more-text{
                                display: none;
+                           }
+
+                           .read-more-text-show{
+                               display: inline;
                            }
                        }
 
