@@ -807,12 +807,8 @@ html body {
   font-weight: lighter;
 }
 
-.container .news .news-wrap .read .same5 .text p .read-more-text {
+.container .news .news-wrap .read .same5 .text p .more-text {
   display: none;
-}
-
-.container .news .news-wrap .read .same5 .text p .read-more-text-show {
-  display: inline;
 }
 
 .container .news .news-wrap .read .same5 .text p:nth-child(3) {
