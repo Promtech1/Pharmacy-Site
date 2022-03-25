@@ -770,6 +770,9 @@ html body {
 
 .container .news .news-wrap .read .same5 {
   width: 235px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   -webkit-box-shadow: 0px 0px 10px 0px #e5e5e5;
           box-shadow: 0px 0px 10px 0px #e5e5e5;
   padding-bottom: 1em;
@@ -809,6 +812,10 @@ html body {
 
 .container .news .news-wrap .read .same5 .text p .more-text {
   display: none;
+}
+
+.container .news .news-wrap .read .same5 .text .show .more-text {
+  display: inline;
 }
 
 .container .news .news-wrap .read .same5 .text p:nth-child(3) {

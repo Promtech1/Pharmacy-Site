@@ -31,3 +31,10 @@ hamburger.addEventListener("click", function(){
         navbar.classList.add("mini")
     }
 })
+
+const readMoreBtn = document.querySelector(".read-more-btn");
+const text = document.querySelector(".main-text");
+
+readMoreBtn.addEventListener("click", (e)=>{
+    text.classList.toggle("show")
+})
