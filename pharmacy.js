@@ -37,4 +37,9 @@ const text = document.querySelector(".main-text");
 
 readMoreBtn.addEventListener("click", (e)=>{
     text.classList.toggle("show")
+    if(readMoreBtn.innerText === "Read more..."){
+        readMoreBtn.innerText = "Read less";
+    }else{
+        readMoreBtn.innerText = "Read more..."
+    }
 })
