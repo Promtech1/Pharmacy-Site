@@ -32,6 +32,7 @@ hamburger.addEventListener("click", function(){
     }
 })
 
+//For the first news
 const readMoreBtn = document.querySelector(".read-more-btn");
 const text = document.querySelector(".main-text");
 
@@ -41,5 +42,18 @@ readMoreBtn.addEventListener("click", (e)=>{
         readMoreBtn.innerText = "Read less";
     }else{
         readMoreBtn.innerText = "Read more..."
+    }
+})
+
+//This id for the second news
+const readMoreBtn2 = document.querySelector(".read-more-btn2");
+const text2 = document.querySelector(".main-text2");
+
+readMoreBtn2.addEventListener("click", (e)=>{
+    text2.classList.toggle("show2")
+    if(readMoreBtn2.innerText === "Read more..."){
+        readMoreBtn2.innerText = "Read less";
+    }else{
+        readMoreBtn2.innerText = "Read more..."
     }
 })

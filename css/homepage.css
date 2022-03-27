@@ -818,6 +818,10 @@ html body {
   display: inline;
 }
 
+.container .news .news-wrap .read .same5 .text .show2 .more-text {
+  display: inline;
+}
+
 .container .news .news-wrap .read .same5 .text p:nth-child(3) {
   color: #F07C00;
   cursor: pointer;
