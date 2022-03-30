@@ -70,3 +70,11 @@ readMoreBtn3.addEventListener("click", (e)=>{
         readMoreBtn3.innerText = "Read more..."
     }
 })
+
+//This id for the third news
+const readMoreBtn4 = document.querySelector(".read-more-btn4");
+const text4 = document.querySelector(".main-text4");
+
+readMoreBtn4.addEventListener("click", (e)=>{
+    text4.classList.toggle("show4")
+})
