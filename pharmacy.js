@@ -71,10 +71,15 @@ readMoreBtn3.addEventListener("click", (e)=>{
     }
 })
 
-//This id for the third news
+//This id for the forth news
 const readMoreBtn4 = document.querySelector(".read-more-btn4");
 const text4 = document.querySelector(".main-text4");
 
 readMoreBtn4.addEventListener("click", (e)=>{
     text4.classList.toggle("show4")
+    if(readMoreBtn4.innerText === "Read more..."){
+        readMoreBtn4.innerText = "Read less";
+    }else{
+        readMoreBtn4.innerText = "Read more..."
+    }
 })
