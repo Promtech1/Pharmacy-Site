@@ -325,7 +325,7 @@ html body {
   gap: 1em;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  color: white;
+  color: pink;
 }
 
 .container .section1 section .section1-wrap .surround-text .up .surround-left .text h1 {
