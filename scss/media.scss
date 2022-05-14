@@ -1,0 +1,476 @@
+// This is a media query for the header
+@media only screen and (max-width: 1110px){
+    .container{
+        .header{
+            header{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 662px){
+    .container{
+        .header{
+            header{
+                .header-right{
+                    flex-direction: column;
+                    width: 70%;
+                    .same1{
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .container{
+        .header{
+            header{
+                .header-left{
+                    flex-direction: column;
+                    .dema1{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+//The media query for the header ends here
+
+// This media query is for the navbar
+@media only screen and (max-width: 1094px){
+    .container{
+        .navbar{
+            nav{
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .container{
+        .navbar{
+            nav{
+                ul{
+                    flex-direction: column;
+                    li{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+//The media query for the navbar ends here
+
+//The media query for section1 starts here
+@media only screen and (max-width: 974px){
+    .section1{
+        section{
+            height: 450px;
+
+            .main-pic{
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 926px){
+    .section1{
+        section{
+            .section1-wrap{
+                .surround-text{
+                    .up{
+                        .surround-left{
+                            .text{
+                                h1{
+                                    width: fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 904px){
+    .container{
+        .section1{
+            section{
+                .section1-wrap{
+                    .surround-text{
+                        .up{
+                            padding: 0 1em;
+                            .surround-left{
+                                .text{
+                                    h1{
+                                        font-size:3.3rem;
+                                    }
+                                    p{
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 662px){
+    .container{
+        .section1{
+            section{
+                .section1-wrap{
+                    .surround-text{
+                        
+                        .up{
+                            width: 100%;
+                            
+                            justify-content: center;
+                            .surround-left{
+                                .left-arrow{
+                                    display: none;
+                                }
+
+                                .text{
+                                    
+                                    h1{
+                                        text-align: center;
+                                    }
+
+                                    p{
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            .surround-right{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .container{
+        .section1{
+            section{
+                height: 400px;
+                .section1-wrap{
+                    .surround-text{
+                        .up{
+                            .surround-left{
+                                
+                                .text{
+                                    h1{
+                                        font-size:12vw;
+                                        
+                                    }
+                                    p{
+                                        font-size: 5vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// This is for the appointment media query
+@media only screen and (max-width: 1098px){
+    .container{
+        .appointment{
+            padding: 2em 0;
+            .appointment-wrap{
+                gap: 3em;
+                .appoint-right{
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1044px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                flex-direction: column;
+                align-items: center;
+
+                .appoint-left{
+                    .heading{
+                        text-align: center;
+
+                        h1{
+                            line-height: 1;
+                            margin-bottom: .5em;
+                        }
+                    }
+
+                    .discription{
+                        width: 80%;
+                        justify-content: center;
+                        align-items: center;
+                        
+                    }
+                }
+
+                .appoint-right{
+                    width: 80%;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1044px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                .appoint-left{
+                    .discription{
+                        .same3{
+                            border: 1px solid white;
+                            box-shadow: 0px 0px 10px 0px rgba(229, 229, 229, 100%);
+                            padding: 1em 1em;
+                            img{
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 332px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                .appoint-left{
+                    .heading{
+                        h1{
+                            font-size: 14vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//This is the form appointment media query
+@media only screen and (max-width: 586px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                .appoint-right{
+                    form{
+                        width: 80%;
+                        padding:2em 0;
+                        .same4{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                .appoint-left{
+                    width: 100%;
+                    .discription{
+                        .same3{
+                            flex-direction: column;
+                            gap: 1em;
+
+                            img{
+                                width: 80px;
+                            }
+                            .disc-text{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 382px){
+    .container{
+        .appointment{
+            .appointment-wrap{
+                width: 90%;
+                .appoint-right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+//The appointment media query ends here
+
+//The is for the news button query
+@media only screen and (max-width: 680px){
+    .container{
+        .news{
+            .news-wrap{
+                .button{
+                    button{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+//It ends here
+
+//This is a media query for the sonsor section
+@media only screen and (max-width: 350px){
+    .container{
+        .sponsors{
+            .sponsor-wrap{
+                img{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+//It ends here
+
+//The responsiveness for the footer starts
+@media only screen and (max-width: 1014px){
+    .container{
+        .footer{
+            footer{
+                .subscribe{
+                    text-align: center;
+                    .sub-btn{
+                        input{
+                            padding-right: 6.9em;
+                        }
+
+                        input::placeholder{
+                            font-size: 1.1rem;
+                        }
+
+                        button{
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 818px){
+    .container{
+        .footer{
+            footer{
+                gap: 5em;
+                .subscribe{
+                    .sub-btn{
+                        input{
+                            padding-right: 1.3em;
+                        }
+
+                        button{
+                            position: unset;
+                            margin-top: .5em;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 726px){
+    .container{
+        .footer{
+            footer{
+                gap: 5em;
+                .subscribe{
+                    .sub-btn{
+                        width: 80%;
+                        height: 50px;
+                        input{
+                            padding-left: 1em;
+                            padding-right: .5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .container{
+        .footer{
+            footer{
+                gap: 5em;
+                .subscribe{
+                    .sub-btn{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 776px){
+    .container{
+        .footer{
+            footer{
+                .main-footer{
+                    flex-direction: column;
+                    .footer-left{
+                        .presence{
+                            .address{
+                                p{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

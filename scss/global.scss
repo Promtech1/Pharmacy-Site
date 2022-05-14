@@ -1,0 +1,15 @@
+html{
+    box-sizing: border-box;
+    font-size: 1rem;
+
+    *, *::before, *::after{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        font-family: 'El Messiri', sans-serif;
+    }
+
+}
