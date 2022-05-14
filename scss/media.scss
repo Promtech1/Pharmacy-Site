@@ -172,7 +172,6 @@
     .container{
         .section1{
             section{
-                height: 400px;
                 .section1-wrap{
                     .surround-text{
                         .up{
@@ -190,6 +189,34 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 614px){
+    .container{
+        .section1{
+            section{
+                height: 400px;
+
+                .main-pic{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .container{
+        .section1{
+            section{
+                height: 350px;
+
+                .main-pic{
+                    height: 100%;
                 }
             }
         }
@@ -468,6 +495,24 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 698px){
+    .container{
+        .footer{
+            footer{
+                .subscribe{
+                    margin-bottom: 1em;
+                }
+                .main-footer{
+                    .footer-left{
+                        align-items: center;
+                        flex-direction: column;
                     }
                 }
             }
