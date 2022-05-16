@@ -855,6 +855,7 @@ html body {
 
 .container .footer footer .subscribe p {
   font-size: 1.3rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .container .footer footer .subscribe .sub-btn {
@@ -912,6 +913,7 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.5em;
+  font-family: 'Lato', sans-serif;
 }
 
 .container .footer footer .main-footer .footer-left {
@@ -990,6 +992,34 @@ html body {
 
 .container .footer footer .main-footer .footer-right .ul-left-links .same6 li {
   cursor: pointer;
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+.container .footer footer .main-footer .footer-right .ul-left-links .same6 li::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0px;
+  height: 3px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background: #F07C00;
+  z-index: 20;
+  -webkit-transition: ease .40s;
+  transition: ease .40s;
+}
+
+.container .footer footer .main-footer .footer-right .ul-left-links .same6 li:hover::after {
+  width: 100%;
+}
+
+.container .footer footer .main-footer .footer-right .ul-left-links .ul-left li:nth-child(1) {
+  color: #F07C00;
 }
 
 .container .footer footer .main-footer .footer-right .ul-left-links .ul-right {
