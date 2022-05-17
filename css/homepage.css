@@ -163,8 +163,9 @@ html body {
   width: 20px;
 }
 
-.container .header header .header-right select {
+.container .header header .header-right .yes {
   background-color: #EFEFEF;
+  color: black;
   border: none;
   height: 30px;
   width: 100px;
@@ -176,6 +177,25 @@ html body {
 .container .navbar {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  -webkit-box-shadow: 0px 5px 10px 0px #e5e5e5;
+          box-shadow: 0px 5px 10px 0px #e5e5e5;
+  background-color: white;
+  top: 0;
+  height: 70px;
+}
+
+.container .navbar .sight {
+  height: 0px;
+  visibility: hidden;
+}
+
+.container .navbar .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container .navbar nav {
@@ -235,6 +255,24 @@ html body {
 
 .container .navbar nav ul li:nth-child(1) {
   color: #F07C00;
+}
+
+.container .navbar nav .hamburger {
+  display: none;
+}
+
+.container .navbar nav .open > div:first-child {
+  -webkit-transform: rotate(46deg);
+          transform: rotate(46deg);
+}
+
+.container .navbar nav .open > div:nth-child(2) {
+  opacity: 0;
+}
+
+.container .navbar nav .open > div:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .container .section1 {
@@ -1078,6 +1116,135 @@ html body {
   }
   .container .navbar nav ul li {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container .navbar {
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 10px 0px #e5e5e5;
+            box-shadow: 0px 5px 10px 0px #e5e5e5;
+    top: 0;
+    right: 0%;
+    width: 100%;
+    z-index: 222;
+  }
+  .container .navbar .mobile-nav ul li {
+    cursor: pointer;
+    font-weight: 600;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+  }
+  .container .navbar .mobile-nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0px;
+    height: 3px;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    background: #F07C00;
+    z-index: 20;
+    -webkit-transition: ease .40s;
+    transition: ease .40s;
+  }
+  .container .navbar .mobile-nav ul li:hover::after {
+    width: 100%;
+  }
+  .container .navbar .mobile-nav ul li:nth-child(1) {
+    color: #F07C00;
+  }
+  .container .navbar .mobile-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 10px 0px black;
+            box-shadow: 0px 10px 10px 0px black;
+    width: 50%;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+  }
+  .container .navbar .mobile-open ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+    gap: 4em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .container .navbar .mobile-open ul li {
+    cursor: pointer;
+    font-weight: 600;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+  }
+  .container .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 88%;
+  }
+  .container .navbar nav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+  }
+  .container .navbar nav .hamburger div {
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    -webkit-transform-origin: 2px 1px;
+            transform-origin: 2px 1px;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    display: block;
+  }
+  .container .navbar nav .hamburger div:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  .container .navbar nav ul {
+    display: none;
+  }
+  .container .mini .mobile-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: visible;
+  }
+  .container .mini .first {
+    height: 100vh;
   }
 }
 

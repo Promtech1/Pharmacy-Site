@@ -68,6 +68,130 @@
         }
     }
 }
+
+//This is for the hamburger in the navbar, it starts here
+@media only screen and (max-width: 800px){
+    .container{
+        .navbar{
+            background-color: white;
+            box-shadow: 0px 5px 10px 0px rgba(229, 229, 229, 100%);
+            top: 0;
+            right: 0%;
+            width: 100%;
+            z-index: 222;
+            
+            .mobile-nav{
+                ul{
+                    li{
+                        cursor: pointer;
+                        font-weight: 600;
+                        width: max-content;
+                        position: relative
+                    }
+    
+                    li::after{
+                        content: "";
+                        position: absolute;
+                        bottom: -8px;
+                        left: 50%;
+                        width: 0px;
+                        height: 3px;
+                        transform: translate(-50%);
+                        background: #F07C00;
+                        z-index: 20;
+                        transition: ease .40s;
+                    }
+    
+                    li:hover::after{
+                        width: 100%;
+                    }
+    
+                    li:nth-child(1){
+                        color: #F07C00;
+                    }
+                }
+            }
+
+            .mobile-open{
+                display: flex;
+                position: absolute;
+                top: 0;
+                background-color: white;
+                box-shadow: 0px 10px 10px 0px black;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: height 1s;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    list-style-type: none;
+                    gap: 4em;
+                    text-transform: uppercase;
+                    text-align: center;
+    
+                    li{
+                        cursor: pointer;
+                        font-weight: 600;
+                        width: max-content;
+                        position: relative;
+                        
+                    }
+                }
+
+                
+            }
+
+            nav{
+                display: flex;
+                justify-content: flex-end;
+                width: 88%;
+                
+                .hamburger{
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    width:25px;
+                    
+                    
+                    div{
+                        transition: all 300ms ease-in-out;
+                        transform-origin: 2px 1px;
+                        width: 25px;
+                        height:2px;
+                        background-color: black;
+                        display: block;
+                        
+                        &:not(:last-child){
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+
+                ul{
+                    display: none;
+                }
+            }
+        }
+
+        
+
+        .mini{
+            .mobile-nav{
+                display: flex;
+                visibility: visible;
+            }
+            .first{
+                height: 100vh;
+            }
+        }
+    }
+}
+//This is for the hamburger in the navbar, it ends here
+
 //The media query for the navbar ends here
 
 //The media query for section1 starts here
