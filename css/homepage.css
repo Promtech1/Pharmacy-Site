@@ -31,7 +31,7 @@ html body {
 }
 
 .container .header header {
-  width: 85%;
+  width: 75%;
   margin: 0% auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +321,7 @@ html body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 90%;
   gap: 1em;
 }
 
