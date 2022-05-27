@@ -769,13 +769,14 @@ html body {
 }
 
 .container .news .news-wrap .read .same5 {
-  width: 235px;
+  width: 225px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   -webkit-box-shadow: 0px 0px 10px 0px #e5e5e5;
           box-shadow: 0px 0px 10px 0px #e5e5e5;
   padding-bottom: 1em;
+  margin-right: .5em;
 }
 
 .container .news .news-wrap .read .same5 .news-img {
