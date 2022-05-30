@@ -90,15 +90,22 @@
 
         <div class="section1">
             <section>
-                <img src="/pics/doctor-look.png" alt="" class="main-pic">
+                <div class="slide fade">
+                    <img src="/pics/doctor-look.png" alt="" class="main-pic">
+                </div>
+                <div class="slide fade">
+                    <img src="/pics/young-woman-pharmacist-pharmacy.jpg" alt="" class="main-pic">
+                </div>
+                <div class="slide fade">
+                    <img src="/pics/flu-disease-healthcare-medicine-concept-happy-african-american-male-doctor-white-coat-present-new-drugs-cure-from-disease-viruses-showing-pills-guarantee-good-quality-treatment.jpg" alt="" class="main-pic">
+                </div>
                 
-
                 <div class="section1-wrap">
                     <div class="surround-text">
                         <div class="up">
                             <div class="surround-left">
                                 <div class="left-arrow">
-                                    <img src="/pics/left-arrow.png" alt="">
+                                    <img onclick="plusSlides(-1)" src="/pics/left-arrow.png" alt="" class="prev">
                                     <div class="side-line"></div>
                                 </div>
                                 <div class="text">
@@ -110,17 +117,15 @@
                             <div class="surround-right">
                                 <div class="right-arrow">
                                     <div class="side-line"></div>
-                                    <img src="/pics/right-arrow.png" alt="">
+                                    <img onclick="plusSlides(1)" src="/pics/right-arrow.png" alt="" class="next">
                                 </div>
                             </div>
                         </div>
     
                         <div class="down">
-                            <div class="outer-circle">
-                                <div class="inner-circle"></div>
-                            </div>
-                            <div class="remain-cy"></div>
-                            <div class="remain-cy"></div>
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
                         </div>
                     </div>
                 </div>

@@ -283,8 +283,51 @@ html body {
   position: relative;
 }
 
-.container .section1 section .main-pic {
+.container .section1 section .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
   width: 100%;
+}
+
+.container .section1 section .slide img {
+  width: 100%;
+}
+
+.container .section1 section .slide img:nth-child(1) {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.container .section1 section .slide img:nth-child(2) {
+  -ms-flex-preferred-size: 0%;
+      flex-basis: 0%;
+}
+
+.container .section1 section .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .container .section1 section .section1-wrap {
@@ -414,41 +457,20 @@ html body {
   background-color: white;
 }
 
-.container .section1 section .section1-wrap .surround-text .down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2em;
-}
-
-.container .section1 section .section1-wrap .surround-text .down .outer-circle {
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container .section1 section .section1-wrap .surround-text .down .dot {
   cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
 }
 
-.container .section1 section .section1-wrap .surround-text .down .outer-circle .inner-circle {
-  width: 13px;
-  height: 13px;
-  background-color: white;
-  border-radius: 50%;
+.container .section1 section .section1-wrap .surround-text .down .active, .container .section1 section .section1-wrap .surround-text .down .dot:hover {
+  background-color: #717171;
 }
 
 .container .section1 section .section1-wrap .surround-text .down .remain-cy {
